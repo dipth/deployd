@@ -1,0 +1,31 @@
+<ul class="breadcrumb">
+  <li>
+    <%= link_to "Deploys", deploys_path %> <span class="divider">/</span>
+  </li>
+  <li class="active">Deploy</li>
+</ul>
+
+<h1>Deploy: <%=l @deploy.time, :format => :short %></h1>
+<p><%= link_to @deploy.revision, @deploy.revision_url, :target => :blank %></p>
+
+<% if @deploy.previous_deploy == nil %>
+  <div class="alert alert-block">
+    <h4 class="alert-heading">Sorry</h4>
+    This seems to be the first deploy available. As we don't know what revision was deployed before this one, we can't give you any meaningful information.
+  </div>
+<% elsif @deploy.pull_request_merges.any? %>
+  <p>This deploy contained the following merged pull requests:</p>
+  <% @deploy.pull_request_merges.each do |commit| %>
+    <div class="well">
+      <h3><%= commit.short_message %></h3>
+      <p><%= commit.message.gsub(commit.short_message, '')%></p>
+      <p>Authored by: <%= commit.author %> at <%= l commit.authored_date, :format => :long %></p>
+      <p><%= issue_commit_link commit %></p>
+    </div>
+  <% end %>
+<% else %>
+  <div class="alert alert-block alert-info">
+    <h4 class="alert-heading">No Pull Requests</h4>
+    This deploy did not contain any merged pull requests.
+  </div>
+<% end %>

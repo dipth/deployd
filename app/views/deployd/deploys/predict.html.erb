@@ -1,0 +1,33 @@
+<ul class="breadcrumb">
+  <li>
+    <%= link_to "Deploys", deploys_path %> <span class="divider">/</span>
+  </li>
+  <li class="active">Predict</li>
+</ul>
+
+<h1>Next Deploy</h1>
+<p><%= link_to "HEAD", Deployd::Deploy.repo_url, :target => :blank %></p>
+
+<% if @pending_pull_request_merges == nil %>
+  <div class="alert alert-block">
+    <h4 class="alert-heading">Sorry</h4>
+    It doesn't seem like there have been any existing deploys. As such we cannot
+    predict what the next deploy will change.
+  </div>
+<% elsif @pending_pull_request_merges.any? %>
+  <p>The next deploy will contain the following merged pull requests:</p>
+  <% @pending_pull_request_merges.each do |commit| %>
+    <div class="well">
+      <h3><%= commit.short_message %></h3>
+      <p><%= commit.message.gsub(commit.short_message, '')%></p>
+      <p>Authored by: <%= commit.author %> at <%= l commit.authored_date, :format => :long %></p>
+      <p><%= issue_commit_link commit %></p>
+    </div>
+  <% end %>
+<% else %>
+  <div class="alert alert-block alert-success">
+    <h4 class="alert-heading">Nothing to deploy</h4>
+    It doesn't look like there is anything interesting to deploy.
+    Check back when you have merged some pull requests!
+  </div>
+<% end %>

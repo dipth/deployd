@@ -10,6 +10,16 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>0</td>
+      <td>Next deploy</td>
+      <td><%= link_to "HEAD", Deployd::Deploy.repo_url, :target => :blank %></td>
+      <td class="functions">
+        <%= link_to predict_deploys_path, :class => 'btn btn-small btn-inverse' do %>
+          <i class="icon-eye-open icon-white"></i> Predict
+        <% end %>
+      </td>
+    </tr>
     <% @deploys.each_with_index do |deploy, index| %>
       <tr>
         <td><%= index + 1 %></td>
@@ -17,9 +27,11 @@
         <td><%= link_to deploy.revision, deploy.revision_url, :target => :blank %></td>
         <td class="functions">
           <% if index < @deploys.length - 1 %>
-            <a class="btn btn-small btn-info" href="#"><i class="icon-info-sign icon-white"></i> Details</a>
+            <%= link_to deploy_path(:id => deploy.id), :class => 'btn btn-small btn-info' do %>
+              <i class="icon-info-sign icon-white"></i> Details
+            <% end %>
           <% else %>
-            <a class="btn btn-small disabled" href="#"><i class="icon-info-sign icon-white"></i> Details</a>
+            <a class="btn btn-small disabled" href="#"><i class="icon-info-sign"></i> Details</a>
           <% end %>
         </td>
       </tr>
