@@ -36,7 +36,12 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.0)
+    diff-lcs (1.1.3)
     erubis (2.7.0)
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.4)
@@ -51,6 +56,7 @@ GEM
     mime-types (1.19)
     multi_json (1.3.6)
     polyglot (0.3.3)
+    posix-spawn (0.3.6)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -93,5 +99,6 @@ PLATFORMS
 
 DEPENDENCIES
   deployd!
+  grit (~> 2.5)
   jquery-rails
   sqlite3
