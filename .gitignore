@@ -1,9 +1,8 @@
 .bundle/
 log/*.log
 pkg/
-test/dummy/db/*.sqlite3
-test/dummy/log/*.log
-test/dummy/tmp/
-test/dummy/.sass-cache
+test/dummy/current/release/db/*.sqlite3
+test/dummy/current/release/log/*.log
+test/dummy/current/release/tmp/
+test/dummy/current/release/.sass-cache
 
-test/dummy/current/release/tmp/pids/
