@@ -1,0 +1,3 @@
+[submodule "test/dummy/shared/cached-copy"]
+	path = test/dummy/shared/cached-copy
+	url = git@github.com:dipth/deployd_test.git

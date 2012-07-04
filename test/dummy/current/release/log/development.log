@@ -1,0 +1,1670 @@
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 15:12:43 +0200
+Connecting to database specified by database.yml
+
+SQLite3::CantOpenException (unable to open database file):
+  activerecord (3.2.6) lib/active_record/connection_adapters/sqlite3_adapter.rb:26:in `initialize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/sqlite3_adapter.rb:26:in `new'
+  activerecord (3.2.6) lib/active_record/connection_adapters/sqlite3_adapter.rb:26:in `sqlite3_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__1377990238547603083__call__4418056183158528591__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 15:17:57 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.4ms)
+Compiled deployd/bootstrap.css  (77ms)  (pid 6918)
+Compiled deployd/bootstrap-responsive.css  (0ms)  (pid 6918)
+Compiled deployd/deploys.css  (0ms)  (pid 6918)
+Compiled deployd/application.css  (115ms)  (pid 6918)
+Compiled jquery.js  (2ms)  (pid 6918)
+Compiled jquery_ujs.js  (0ms)  (pid 6918)
+Compiled deployd/bootstrap.js  (0ms)  (pid 6918)
+Compiled deployd/deploys.js  (0ms)  (pid 6918)
+Compiled deployd/application.js  (96ms)  (pid 6918)
+Completed 200 OK in 315ms (Views: 314.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /deployd/bootstrap-responsive.css - 200 OK (6ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /deployd/application.css - 200 OK (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /deployd/deploys.css - 200 OK (2ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /deployd/bootstrap.css - 200 OK (2ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /deployd/bootstrap.js - 200 OK (2ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /deployd/deploys.js - 200 OK (1ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /deployd/application.js - 200 OK (7ms)
+
+
+Started GET "/assets/deployd/glyphicons-halflings-white.png" for 127.0.0.1 at 2012-07-03 15:17:58 +0200
+Served asset /deployd/glyphicons-halflings-white.png - 200 OK (6ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 15:20:49 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:38:38 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant Deployd::DeploysController::Deploy):
+  /Users/thomas/Develop/dipth/deployd/app/controllers/deployd/deploys_controller.rb:6:in `index'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:403:in `_run__3809971645505460187__process_action__1497784552952973878__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__3073230639635093107__call__598631037155813374__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:38:57 +0200
+Processing by Deployd::DeploysController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant Deployd::Deploy):
+  /Users/thomas/Develop/dipth/deployd/app/controllers/deployd/deploys_controller.rb:6:in `index'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:403:in `_run__3809971645505460187__process_action__1497784552952973878__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__3073230639635093107__call__598631037155813374__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:39:38 +0200
+Processing by Deployd::DeploysController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NameError (undefined local variable or method `directory_name' for Deployd::Deploy:Class):
+  /Users/thomas/Develop/dipth/deployd/lib/deployd/deploy.rb:17:in `all'
+  /Users/thomas/Develop/dipth/deployd/app/controllers/deployd/deploys_controller.rb:7:in `index'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:403:in `_run__3809971645505460187__process_action__1497784552952973878__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__3073230639635093107__call__598631037155813374__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:40:30 +0200
+Processing by Deployd::DeploysController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NameError (undefined local variable or method `directory_name' for Deployd::Deploy:Class):
+  /Users/thomas/Develop/dipth/deployd/lib/deployd/deploy.rb:17:in `all'
+  /Users/thomas/Develop/dipth/deployd/app/controllers/deployd/deploys_controller.rb:7:in `index'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:403:in `_run__3809971645505460187__process_action__1497784552952973878__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__3073230639635093107__call__598631037155813374__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:40:37 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (62.1ms)
+Completed 500 Internal Server Error in 80ms
+
+ActionView::Template::Error (No such file or directory - /Users/thomas/Develop/dipth/deployd/test/dummy/releases/20120703163600/../../releases/20120703163600/REVISION):
+    14:       <tr>
+    15:         <td><%= index + 1 %></td>
+    16:         <td><%=l deploy.time, :format => :long %></td>
+    17:         <td><%= deploy.revision %></td>
+    18:         <td><a class="btn btn-small btn-info" href="#"><i class="icon-info-sign icon-white"></i> Details</a></td>
+    19:       </tr>
+    20:     <% end %>
+  /Users/thomas/Develop/dipth/deployd/lib/deployd/deploy.rb:31:in `initialize'
+  /Users/thomas/Develop/dipth/deployd/lib/deployd/deploy.rb:31:in `open'
+  /Users/thomas/Develop/dipth/deployd/lib/deployd/deploy.rb:31:in `revision'
+  /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb:17:in `block in ___sers_thomas__evelop_dipth_deployd_app_views_deployd_deploys_index_html_erb__2088315831160046156_70121309931280'
+  /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb:13:in `each'
+  /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb:13:in `each_with_index'
+  /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb:13:in `___sers_thomas__evelop_dipth_deployd_app_views_deployd_deploys_index_html_erb__2088315831160046156_70121309931280'
+  actionpack (3.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.6) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.6) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.6) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.6) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:403:in `_run__3416802704931676265__process_action__3709001283406740083__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__1713460828416504467__call__410492469456034605__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (0.4ms)
+Completed 200 OK in 78ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /deployd/application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:04 +0200
+Served asset /deployd/application.js - 304 Not Modified (23ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-03 16:41:18 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (6.1ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Served asset /deployd/application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:28 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:29 +0200
+Served asset /deployd/application.js - 304 Not Modified (7ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (0.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:32 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:33 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-03 16:44:34 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 11:37:21 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+Errno::ENOENT (No such file or directory - /Users/thomas/Develop/dipth/deployd/test/dummy/current/../../releases):
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/pathname.rb:397:in `open'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/pathname.rb:397:in `foreach'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/pathname.rb:397:in `children'
+  /Users/thomas/Develop/dipth/deployd/lib/deployd/deploy.rb:17:in `all'
+  /Users/thomas/Develop/dipth/deployd/app/controllers/deployd/deploys_controller.rb:7:in `index'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:403:in `_run__964770661757086323__process_action__1535077164237534295__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__1845494247026655275__call__1461821502362319040__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (58.8ms)
+Completed 200 OK in 124ms (Views: 123.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Served asset /deployd/application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:01 +0200
+Served asset /deployd/application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:02 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (2ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:20 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (6.3ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Served asset /deployd/application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:42 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 11:40:43 +0200
+Served asset /deployd/application.js - 304 Not Modified (8ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:01:12 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (8.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `repo_url' for #<Deployd::Deploy:0x007fbbe6b32438>):
+    14:       <tr>
+    15:         <td><%= index + 1 %></td>
+    16:         <td><%=l deploy.time, :format => :long %></td>
+    17:         <td><%= link_to deploy.revision, deploy.revision_url, :target => :blank %></td>
+    18:         <td><a class="btn btn-small btn-info" href="#"><i class="icon-info-sign icon-white"></i> Details</a></td>
+    19:       </tr>
+    20:     <% end %>
+  /Users/thomas/Develop/dipth/deployd/lib/deployd/deploy.rb:49:in `revision_url'
+  /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb:17:in `block in ___sers_thomas__evelop_dipth_deployd_app_views_deployd_deploys_index_html_erb___3708704691647943131_70222502896580'
+  /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb:13:in `each'
+  /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb:13:in `each_with_index'
+  /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb:13:in `___sers_thomas__evelop_dipth_deployd_app_views_deployd_deploys_index_html_erb___3708704691647943131_70222502896580'
+  actionpack (3.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (3.2.6) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.6) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.6) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.6) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:403:in `_run__4279548232757699395__process_action__4006327993985518841__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__4416279895822333396__call__3364051723995359564__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p125-perf/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p125-perf/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:01:38 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (3503.0ms)
+Completed 200 OK in 3533ms (Views: 3532.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /deployd/application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:01:42 +0200
+Served asset /deployd/application.js - 304 Not Modified (11ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:03:29 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.1ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:03:30 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.7ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:46:40 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.5ms)
+Compiled deployd/application.css  (5ms)  (pid 30436)
+Completed 200 OK in 66ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /deployd/application.css - 200 OK (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:51:20 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:43 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:44 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.5ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:52:53 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:16 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:54:34 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (1.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /deployd/application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 12:55:41 +0200
+Served asset /deployd/application.js - 304 Not Modified (0ms)
+
+
+Started GET "/deployd" for 127.0.0.1 at 2012-07-04 13:25:54 +0200
+Connecting to database specified by database.yml
+Processing by Deployd::DeploysController#index as HTML
+  Rendered /Users/thomas/Develop/dipth/deployd/app/views/deployd/deploys/index.html.erb within layouts/deployd/application (47.8ms)
+Completed 200 OK in 143ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/deployd/bootstrap.css?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /deployd/bootstrap.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/deployd/application.css?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /deployd/application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/deployd/deploys.css?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /deployd/deploys.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /deployd/bootstrap-responsive.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/deployd/application.js?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /deployd/application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/deployd/deploys.js?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /deployd/deploys.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/deployd/bootstrap.js?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /deployd/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-04 13:25:55 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
