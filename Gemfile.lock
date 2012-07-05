@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     deployd (0.0.1)
+      grit (~> 2.5)
       rails (= 3.1.6)
 
 GEM
@@ -100,5 +101,4 @@ PLATFORMS
 
 DEPENDENCIES
   deployd!
-  grit (~> 2.5)
   jquery-rails
